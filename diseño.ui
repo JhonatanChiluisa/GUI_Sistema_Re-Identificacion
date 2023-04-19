@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_14">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_principal">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_titulo">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>42</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgb(0, 0, 0);
+}
+
+QPushButton{
+background-color: #000000ff;
+border-radius: 20px;
+}
+
+
+
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+padding: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Sistema de Re-identificación de Personas</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>317</width>
+              <height>17</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_minimizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>imagenes/icons8-subtract-24 (1).png</normaloff>imagenes/icons8-subtract-24 (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_restaurar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>imagenes/icons8-down-left-arrow-24.png</normaloff>imagenes/icons8-down-left-arrow-24.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_maximizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>imagenes/icons8-down-left-arrow-24(1).png</normaloff>imagenes/icons8-down-left-arrow-24(1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>imagenes/icons8-close-24.png</normaloff>imagenes/icons8-close-24.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_widgets">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>400</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(33, 33, 33);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,4,4">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QFrame{
+background-color: rgb(81, 81, 81);
+border-radius: 10px;
+
+}
+
+QPushButton{
+font: 87 12pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+border-radius: 5px;
+}
+
+QPushButton:hover{
+background-color: rgb(233, 236, 239);
+}
+
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,6,1">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>DATASET</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_6">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>Video</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_2">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>132</width>
+                     <height>236</height>
+                    </rect>
+                   </property>
+                   <widget class="QFrame" name="frm_video_selecionado">
+                    <property name="geometry">
+                     <rect>
+                      <x>9</x>
+                      <y>9</y>
+                      <width>111</width>
+                      <height>131</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(122, 125, 125);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <item>
+                      <widget class="QCheckBox" name="checkBox_video">
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(122, 125, 125);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lbl_imagen_video">
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>imagenes/rotro_112.jpg</pixmap>
+                       </property>
+                       <property name="scaledContents">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_7">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(122, 125, 125);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="btn_buscar_video">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>imagenes/icons8-search-26.png</normaloff>imagenes/icons8-search-26.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_eliminar_video">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>imagenes/icons8-delete-trash-24 (1).png</normaloff>imagenes/icons8-delete-trash-24 (1).png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_cargar_BD">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>imagenes/icons8-upload-24.png</normaloff>imagenes/icons8-upload-24.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+
+background-color: rgb(33, 33, 33);
+}
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_4">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QFrame" name="frame_5">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>Entrada:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="lbl_nombre_video">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>Video0001_36</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_8">
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+
+background-color: rgb(81, 81, 81);
+border-radius: 10px;
+}
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}
+
+QPushButton{
+background-color: rgb(59, 106, 213);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgb(87, 126, 219);
+border-radius: 20px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7" stretch="4,1">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetDefaultConstraint</enum>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frm_video1">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(122, 125, 125);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_13">
+                   <item>
+                    <widget class="QWidget" name="widget_video1" native="true"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_10">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>42</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
+                   <property name="spacing">
+                    <number>30</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="btn_pause_video1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_pause.png</normaloff>imagenes/icon_pause.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_play_video1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_play.png</normaloff>imagenes/icon_play.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_stop_video1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_stop.png</normaloff>imagenes/icon_stop.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QFrame{
+background-color: rgb(33, 33, 33);
+}
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8" stretch="1,4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_11">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>Precisión del modelo</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QProgressBar" name="progressBar_precision_modelo">
+                  <property name="minimumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+</string>
+                  </property>
+                  <property name="value">
+                   <number>50</number>
+                  </property>
+                  <property name="invertedAppearance">
+                   <bool>false</bool>
+                  </property>
+                  <property name="textDirection">
+                   <enum>QProgressBar::TopToBottom</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_12">
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(81, 81, 81);
+border-radius: 10px;
+}
+QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}
+
+QPushButton{
+background-color: rgb(59, 106, 213);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgb(87, 126, 219);
+border-radius: 20px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QFrame" name="frm_video2">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(122, 125, 125);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_15">
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>Insertar video</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_13">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>42</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0,0">
+                   <property name="spacing">
+                    <number>30</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="btn_pause_video2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_pause.png</normaloff>imagenes/icon_pause.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_play_video2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_play.png</normaloff>imagenes/icon_play.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_stop_video2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>imagenes/icon_stop.png</normaloff>imagenes/icon_stop.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_db">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(33, 33, 33);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+font: 60 10pt &quot;Aria Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border: 0px solid #14c8dc;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Coincidencias:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollAreaBD">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(81, 81, 81);
+</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>727</width>
+               <height>89</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
